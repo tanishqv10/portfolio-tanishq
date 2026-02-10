@@ -36,20 +36,20 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
                 {/* Section 2 - Centered (was Left) */}
                 <div style={{ opacity: op2, transform: `translateY(${y2.get()}px)` }} className="max-w-xl absolute left-20">
                     <h2 className="text-6xl font-bold mb-6 text-white leading-tight">
-                        I build digital <span className="text-blue-500">experiences.</span>
+                        I build intelligent <span className="text-blue-500">systems.</span>
                     </h2>
                     <p className="text-xl text-gray-300">
-                        Merging technical precision with artistic vision to create immersive web applications.
+                        Designing scalable software, AI-driven platforms, and production-ready web applications from idea to deployment.
                     </p>
                 </div>
 
                 {/* Section 3 - Centered (was Right) */}
                 <div style={{ opacity: op3, transform: `translateY(${y3.get()}px)` }} className="text-right max-w-xl absolute right-20">
                     <h2 className="text-6xl font-bold mb-6 text-white leading-tight">
-                        Bridging <span className="text-purple-500">design</span> and <span className="text-purple-500">engineering.</span>
+                        Bridging <span className="text-purple-500">product</span> and <span className="text-purple-500">engineering.</span>
                     </h2>
                     <p className="text-xl text-gray-300">
-                        From concept to deployment, every pixel is crafted with purpose.
+                        From architecture to production, turning complex ideas into reliable software.
                     </p>
                 </div>
             </div>

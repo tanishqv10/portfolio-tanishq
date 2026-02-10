@@ -1,35 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChefHat } from "lucide-react";
+import { CricketIcon, BadmintonIcon } from "./icons/CustomIcons";
+
 
 const hobbies = [
     {
         name: "Cooking",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16.92 12.08 19 20h-5l.77-9h.32" /><path d="M8.7 13.7 7 20h5l-.65-6.5h-.65" /><path d="M12 5V3" /><path d="M5 5V3" /><path d="M19 5V3" /><rect x="2" y="5" width="20" height="2" rx="1" /><path d="M22 7v10a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V7" /></svg>
-        ),
-        description: "Experimenting with new recipes and cuisines."
+        icon: <ChefHat size={32} />,
+        description: "Debugging recipes the same way I debug code."
     },
     {
         name: "Cricket",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="8" /></svg>
-        ),
-        description: "Playing cricket with friends."
+        icon: <CricketIcon size={32} />,
+        description: "Team sport, strong opinions, post-match analysis."
     },
     {
         name: "Badminton",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21.5c-2.485 0-4.5-2.015-4.5-4.5V11a4.5 4.5 0 0 1 9 0v6c0 2.485-2.015 4.5-4.5 4.5z" /><line x1="12" y1="2" x2="12" y2="7" /><path d="m14 4-4 6" /><path d="m10 4 4 6" /></svg>
-        ),
-        description: "Enjoying competitive badminton matches."
+        icon: <BadmintonIcon size={32} />,
+        description: "Precision beats power. Usually."
     },
     {
         name: "PC Gaming",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" /><path d="M6 12h4" /><path d="M8 10v4" /><circle cx="17" cy="12" r="1" /></svg>
         ),
-        description: "Strategy and FPS games on PC."
+        description: "Stress testing reflexes and hardware."
     }
 ];
 

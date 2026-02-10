@@ -17,12 +17,10 @@ export default function WhoAmI() {
                     className="space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed"
                 >
                     <p>
-                        I am a passionate software developer with a knack for building immersive web experiences and robust backend systems.
-                        My journey bridges the gap between creative design and engineering precision.
+                        I am a software engineer based in the California, United States with a background in computer science and a strong focus on building scalable, production-ready applications across the full stack. My work sits at the intersection of thoughtful design and solid engineering, where I enjoy turning complex ideas into reliable, real-world software.
                     </p>
                     <p>
-                        With a deep interest in AI, full-stack development, and system architecture, I thrive on solving complex problems
-                        and turning ideas into deployed realities. When I&apos;m not coding, you&apos;ll find me either cooking or playing.
+                        With a strong interest in AI, system architecture, and full-stack development, I thrive on solving challenging problems and taking projects from concept to deployment. Outside of coding, I enjoy cooking and exploring new ideas beyond the screen.
                     </p>
                 </motion.div>
             </div>
