@@ -17,12 +17,12 @@ export default function WhoAmI() {
                     className="space-y-6 text-lg md:text-xl text-foreground/80 leading-relaxed"
                 >
                     <p>
-                        I'm a passionate software developer with a knack for building immersive web experiences and robust backend systems.
+                        I am a passionate software developer with a knack for building immersive web experiences and robust backend systems.
                         My journey bridges the gap between creative design and engineering precision.
                     </p>
                     <p>
                         With a deep interest in AI, full-stack development, and system architecture, I thrive on solving complex problems
-                        and turning ideas into deployed realities. When I'm not coding, you'll find me either cooking or playing.
+                        and turning ideas into deployed realities. When I&apos;m not coding, you&apos;ll find me either cooking or playing.
                     </p>
                 </motion.div>
             </div>

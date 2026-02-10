@@ -1,18 +1,13 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import { Sun, Moon, Monitor } from "lucide-react";
 
 export default function ThemeSwitcher() {
-    const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme } = useTheme();
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
+    // Avoid hydration mismatch without useEffect
+    if (!resolvedTheme) {
         return null;
     }
 
@@ -21,27 +16,29 @@ export default function ThemeSwitcher() {
             <button
                 onClick={() => setTheme("light")}
                 className={`p-2 rounded-full transition-all duration-300 ${theme === "light"
-                        ? "bg-white text-black shadow-sm transform scale-105"
+                        ? "bg-white text-black shadow-sm scale-105"
                         : "text-gray-400 hover:text-white hover:bg-white/10"
                     }`}
                 aria-label="Light Mode"
             >
                 <Sun size={18} />
             </button>
+
             <button
                 onClick={() => setTheme("dark")}
                 className={`p-2 rounded-full transition-all duration-300 ${theme === "dark"
-                        ? "bg-gray-800 text-white shadow-sm transform scale-105"
+                        ? "bg-gray-800 text-white shadow-sm scale-105"
                         : "text-gray-400 hover:text-white hover:bg-white/10"
                     }`}
                 aria-label="Dark Mode"
             >
                 <Moon size={18} />
             </button>
+
             <button
                 onClick={() => setTheme("system")}
                 className={`p-2 rounded-full transition-all duration-300 ${theme === "system"
-                        ? "bg-blue-500/20 text-blue-400 shadow-sm transform scale-105"
+                        ? "bg-blue-500/20 text-blue-400 shadow-sm scale-105"
                         : "text-gray-400 hover:text-white hover:bg-white/10"
                     }`}
                 aria-label="System Mode"
