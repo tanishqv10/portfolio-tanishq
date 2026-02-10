@@ -54,12 +54,19 @@ export default function ScrollyCanvas({
         let offsetX = 0;
         let offsetY = 0;
 
+        // Zoom factor to hide watermark
+        const scale = 1.1;
+
         if (canvasRatio > imgRatio) {
-            drawHeight = canvas.width / imgRatio;
+            drawHeight = (canvas.width / imgRatio) * scale;
+            drawWidth = canvas.width * scale;
             offsetY = (canvas.height - drawHeight) / 2;
-        } else {
-            drawWidth = canvas.height * imgRatio;
             offsetX = (canvas.width - drawWidth) / 2;
+        } else {
+            drawWidth = (canvas.height * imgRatio) * scale;
+            drawHeight = canvas.height * scale;
+            offsetX = (canvas.width - drawWidth) / 2;
+            offsetY = (canvas.height - drawHeight) / 2;
         }
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
