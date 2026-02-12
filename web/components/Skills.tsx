@@ -8,20 +8,24 @@ const skillCategories = [
         skills: ["Python", "TypeScript", "JavaScript", "C++", "Swift", "SQL"]
     },
     {
-        title: "Backend & Systems",
-        skills: ["Flask", "Node.js", "Django", "Docker", "Kubernetes", "AWS Lambda", "AWS API Gateway", "DynamoDB", "Nginx", "Linux"]
+        title: "Backend & Distributed Systems",
+        skills: ["Flask", "Node.js", "Django", "Docker", "Kubernetes", "Apache Kafka", "AWS Lambda", "AWS API Gateway"]
+    },
+    {
+        title: "Databases & Storage",
+        skills: ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Vector Databases"]
     },
     {
         title: "Frontend",
         skills: ["React", "Next.js", "Angular", "HTML5", "CSS3", "Tailwind CSS"]
     },
     {
-        title: "AI & Data",
-        skills: ["PyTorch", "Transformers", "LangChain", "RAG Systems", "MongoDB", "Redis", "Vector Databases", "Scikit-learn"]
+        title: "AI & Machine Learning",
+        skills: ["PyTorch", "Transformers", "LangChain", "RAG Systems", "Scikit-learn"]
     },
     {
-        title: "Tools & DevOps",
-        skills: ["Git", "GitHub", "Postman", "CI/CD Protocols", "Power BI", "Jira"]
+        title: "DevOps & Observability",
+        skills: ["Git", "GitHub", "CI/CD Protocols", "Datadog", "Postman", "Jira", "Power BI"]
     }
 ];
 
