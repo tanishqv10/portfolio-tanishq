@@ -23,6 +23,12 @@ const projects = [
         url: "https://github.com/tanishqv10/GarageMS"
     },
     {
+        name: "CO-Defender",
+        description: "PATROL is a full-stack Android application with a Node.js/Express backend that provides real-time COVID-19 statistics, global news updates, and location-based healthcare services like finding nearby hospitals and pharmacies.",
+        language: "Java, JavaScript",
+        url: "https://github.com/tanishqv10/PATROL"
+    },
+    {
         name: "Stock Prediction",
         description: "Stock market prediction model using machine learning.",
         language: "Jupyter Notebook",
