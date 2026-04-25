@@ -1,11 +1,11 @@
-import ScrollWrapper from "@/components/ScrollWrapper";
-import WhoAmI from "@/components/WhoAmI";
-import Experience from "@/components/Experience";
-import Publications from "@/components/Publications";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import ExtraCurricular from "@/components/ExtraCurricular";
-import Contact from "@/components/Contact";
+import ScrollWrapper from "@/components/v1/components/ScrollWrapper";
+import WhoAmI from "@/components/v1/sections/WhoAmI";
+import Experience from "@/components/v1/sections/Experience";
+import Publications from "@/components/v1/sections/Publications";
+import Skills from "@/components/v1/sections/Skills";
+import Projects from "@/components/v1/sections/Projects";
+import ExtraCurricular from "@/components/v1/sections/ExtraCurricular";
+import Contact from "@/components/v1/sections/Contact";
 
 export default function Home() {
     return (

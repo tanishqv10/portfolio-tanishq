@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChefHat } from "lucide-react";
-import { CricketIcon, BadmintonIcon } from "./icons/CustomIcons";
+import { CricketIcon, BadmintonIcon } from "@/components/v1/components/icons/CustomIcons";
 
 
 const hobbies = [

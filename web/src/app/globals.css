@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Match `dark:` to next-themes / class on <html> (default v4 = OS media only). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: 'Inter', system-ui, sans-serif;
   --color-background: var(--background);
@@ -26,6 +29,11 @@
   --border: #333333;
   --muted: #a3a3a3;
   --accent: #60a5fa;
+}
+
+html,
+body {
+  margin: 0;
 }
 
 body {
@@ -79,4 +87,17 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* v2 map bottom card (unlocks + path hints) — z-index in UnlockToast */
+.v2-unlock-toast {
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid color-mix(in oklch, var(--foreground) 32%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in oklch, var(--foreground) 6%, transparent),
+    0 20px 40px -10px color-mix(in oklch, var(--foreground) 25%, transparent),
+    0 12px 32px -8px rgb(0 0 0 / 0.35);
+  backdrop-filter: blur(12px);
+  box-sizing: border-box;
 }
