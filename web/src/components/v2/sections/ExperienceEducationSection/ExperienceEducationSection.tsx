@@ -27,31 +27,20 @@ export function ExperienceEducationSection() {
             onMouseLeave={() => setExperienceHoverId(null)}
           >
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-              <div className="flex min-w-0 items-start gap-3">
-                {e.logo && (
-                  <div className="mt-0.5 h-10 w-10 shrink-0 overflow-hidden rounded-full border border-foreground/12 bg-white p-1">
-                    <img
-                      src={e.logo}
-                      alt={`${e.company} logo`}
-                      className="h-full w-full object-contain"
-                    />
-                  </div>
-                )}
-                <div>
-                  <span
-                    className={clsx(
-                      "text-xs font-mono uppercase tracking-wider",
-                      e.kind === "work"
-                        ? "text-foreground/50"
-                        : "text-foreground/35"
-                    )}
-                  >
-                    {e.kind}
-                  </span>
-                  <h3 className="text-base font-medium text-foreground sm:text-lg">
-                    {e.role} · {e.company}
-                  </h3>
-                </div>
+              <div>
+                <span
+                  className={clsx(
+                    "text-xs font-mono uppercase tracking-wider",
+                    e.kind === "work"
+                      ? "text-foreground/50"
+                      : "text-foreground/35"
+                  )}
+                >
+                  {e.kind}
+                </span>
+                <h3 className="text-base font-medium text-foreground sm:text-lg">
+                  {e.role} · {e.company}
+                </h3>
               </div>
               <span className="shrink-0 font-mono text-xs text-foreground/40">
                 {e.dates}

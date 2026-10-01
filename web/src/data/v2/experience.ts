@@ -7,7 +7,6 @@ export type V2WorkItem = {
   bullets: string[];
   kind: "work" | "education";
   debugLabels?: string[];
-  logo?: string;
 };
 
 export const experienceItems: V2WorkItem[] = [
@@ -18,8 +17,9 @@ export const experienceItems: V2WorkItem[] = [
     dates: "August 2026 – Present",
     location: "Sunnyvale, USA",
     kind: "work",
-    logo: "/Google.png",
-    bullets: [],
+    bullets: [
+      "Cleared the Professional Cloud Architect certification exam",
+    ],
   },
   {
     id: "mercor",

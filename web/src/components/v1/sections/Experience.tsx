@@ -23,7 +23,9 @@ const experienceData: ExperienceItem[] = [
         organization: "Google",
         date: "August 2026 - Present",
         location: "Sunnyvale, USA",
-        description: [],
+        description: [
+            "Cleared the Professional Cloud Architect certification exam",
+        ],
         logo: "/Google.png",
     },
     // Work - Mercor (Feb 2025 - Feb 2026)
