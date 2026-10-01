@@ -15,13 +15,24 @@ interface ExperienceItem {
 }
 
 const experienceData: ExperienceItem[] = [
-    // Work - Mercor (Feb 2025 - Present)
+    // Work - Google (Aug 2026 - Present)
+    {
+        id: "work-google",
+        type: "work",
+        title: "Forward Deployed Engineer",
+        organization: "Google",
+        date: "August 2026 - Present",
+        location: "Sunnyvale, USA",
+        description: [],
+        logo: "/Google.png",
+    },
+    // Work - Mercor (Feb 2025 - Feb 2026)
     {
         id: "work1",
         type: "work",
         title: "Applied AI Engineer",
         organization: "Mercor",
-        date: "Feb 2025 - Present",
+        date: "Feb 2025 - Feb 2026",
         location: "Remote, USA",
         description: [
             "Built and maintained backend services supporting large-scale evaluation workflows, reducing job processing time by 30% through caching improvements, smarter batching, and tightened concurrency controls",

@@ -33,7 +33,7 @@ export function AboutSection() {
             the demo.
           </p>
           <p className="mt-6 font-mono text-xs text-foreground/45">
-            Previously: Mercor · Ema Health · Quantiphi · USC
+            Currently: Google · Previously: Mercor · Ema Health · Quantiphi · USC
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <button

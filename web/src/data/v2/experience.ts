@@ -7,9 +7,20 @@ export type V2WorkItem = {
   bullets: string[];
   kind: "work" | "education";
   debugLabels?: string[];
+  logo?: string;
 };
 
 export const experienceItems: V2WorkItem[] = [
+  {
+    id: "google",
+    company: "Google",
+    role: "Forward Deployed Engineer",
+    dates: "August 2026 – Present",
+    location: "Sunnyvale, USA",
+    kind: "work",
+    logo: "/Google.png",
+    bullets: [],
+  },
   {
     id: "mercor",
     company: "Mercor",
